@@ -1,3 +1,19 @@
+h1 {
+  color: #383B53;
+  font-style: oblique;
+  text-decoration-line: overline underline;
+  letter-spacing: 10px;
+}
 body {
-
+  background-color: #C9B7A6;
+}
+body:hover {
+  background-color: #EADDD7;
+}
+img:hover {
+  opacity: 0.5;
+}
+h1:hover {
+  opacity: 0.5;
+  color: #32213A;
 }
