@@ -1,36 +1,181 @@
 <html>
-  <body>
-     <nav>
-      <li><a href="noun.html"> Glow Sticks <a/></li>
-      <li><a href="index.html"> Home <a/></li>
-    </nav>
-      </body>
-    </html>   
- 
-    <html>
-      <style>
-    nav {
+ <body>
+   <nav>
+     <li class=navli> <a href="noun.html"> Glow Sticks </li>
+     <li class=navli> <a href="index.html"> Home </li>
+   </nav>
+   <br>
+   <br>
+  <center>
+   <h1> Glow Sticks </h1>
+  </center>
+  <center>
+    <div class="row_p">
+      <div class="column_p">
+        <img src="glow_bracelet.png" alt="Bracelet" style="width:75%">
+      </div>
+      <div class="column_p">
+        <img src="glow_stick.png" alt="Stick" style="width:75%">
+      </div>
+      <div class="column_p">
+        <img src="glow_wand.png"
+           alt="Wand"
+           height=200px>
+      </div>
+    </div>
+  </center>
+  <br>
+  <center>
+    <table>
+      <tr>
+        <th>Type</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Bracelet</td>
+        <td>50</td>
+        <td>$5.99</td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td>100</td>
+        <td>$9.99</td>
+      </tr>
+      <tr>
+        <td>Stick</td>
+        <td>15</td>
+        <td>$8.50</td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td>30</td>
+        <td>$14.99</td>
+      </tr>
+      <tr>
+        <td>Wand</td>
+        <td>5</td>
+        <td>$10.50</td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td>10</td>
+        <td>$21.99</td>
+      </tr>
+    </table>
+  <br>
+  <p>Colors</p>
+   <div class="container">
+    <ul class="color">
+      <li>Blue</li>
+      <li>Pink</li>
+      <li>Green</li>
+      <li>Purple</li>
+    </ul>
+   </div>
+  </body>
+</html>
+  
+  
+<html>
+  <style>
+body {
+  background-color:#232426;
+}
+    
+h1 {
+  color:#81f7ec;
+  font: bold 50px Courier New, serif;
+  text-shadow: 0 0 20px #2FF3E0;
+}
+    
+nav {
   list-style-type: none;
   position: fixed;
   width: 100%;
-  background-color: #7F627F;
+  background-color: #424242;
   left: 0%;
   top: 0%;
 }
-li {
-  display: inline;
-  float: right;
-  padding: 20px;
-}
-
-li:hover {
-  background-color: #EADDD7;
-}
-
+    
 a {
   text-decoration: none;
-  color: #41044E;
+  color:#C1FF9B;
+  font: bold 17px Courier New, serif;
+  text-shadow: 0 0 15px #C1FF9B
 }
-        </style>
+    
+.navli {
+  display: inline;
+  float: right;
+  padding: 20px ;
+}
+
+.navli:hover {
+  background-color: #5c5c5c;
+}
+    
+* {
+  box-sizing: border-box;
+}
+
+table, th, td {
+  color:#F8D210;
+  width:50%;
+  border-collapse:collapse;
+  border-style:solid;
+  border-color:gold;
+}
+
+th, td {
+  text-align: left;
+  text-shadow: 0 0 15px #F8D210;
+  font: bold 15px Courier New, serif;
+  text-align:center;
+}
+    
+tr:nth-child(even) {
+  background-color: #424242;
+}
+    
+tr:hover {
+  background-color:#4f4826;
+}
+    
+ul.color {
+  color:#FA26A0;
+  font: bold 25px Courier New, serif;
+  text-shadow: 0 0 15px #FA26A0;
+  display: inline-block;
+  text-align: left;
+}
+    
+div.container {
+  text-align: center;
+}
+    
+p {
+  color:#FA26A0;
+  font: bold 25px Courier New, serif;
+  text-shadow: 0 0 15px #FA26A0;
+}
+    
+img:hover {
+  box-shadow:0 0 35px #AB87FF;
+}
+    
+.column_p {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+    
+.row_p::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    
+  </style>
 </html>
 
