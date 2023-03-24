@@ -1,1 +1,413 @@
+<html>
+  
+  <head>
+    <title> Oasis </title>
+    <link rel="icon" href="final_logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Francois%20One">
+  </head>
+  
+  <body>
+  
+    <nav>
+      <a class="navimg" href="#slides1">
+        <!--subzero_logo.png-->
+        <img src="final_logo.png"
+           alt="home"
+           height=50px>
+      </a>
+      
+      <li class="navli">
+        <a class= "activitiesnav" href="#info4"> IMPORTANT INFORMATION </a>
+      </li>
+      
+      <li class="navli">
+        <a class= "activitiesnav" href="#package3"> PACKAGES </a>
+      </li>
+      
+      <li class="navli">
+        <a class= "aboutnav" href="#meet2"> MEET THE TEAM </a>
+      </li>
+    </nav>
 
+    <br> <br> <br>
+    
+    <div class="slides" id="slides1">
+
+        <div class="container">
+
+        <div class="mySlides">
+            <!--slide1.png-->
+            <img src="slide1.png" style="width:100%">
+
+        </div>
+
+        <div class="mySlides">
+            <!--slide2.png-->
+            <img src="slide2.png" style="width:100%">
+
+        </div>
+
+        <div class="mySlides">
+            <!--slide3.png-->
+            <img src="slide3.png" style="width:100%">
+
+        </div>
+
+        <div class="mySlides">
+            <!--slide4.png-->
+            <img src="slide4.png" style="width:100%">
+
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+
+    </div>
+    
+    <div class="meet" id="meet2">
+      
+      <center>
+      <h2> Meet the Team </h2>
+      </center>
+        
+      <center>
+      <div class="wrapper">
+        
+        <div class="lead"> 
+        
+          <img src="https://i0.wp.com/qcitymetro.com/wp-content/uploads/2021/02/Marcellus-Turner-headshot-square.jpg?fit=1422%2C1422&ssl=1" class="meetImg" height=200px>
+          
+          <p class="meetTxt"> Ernest Remillard is the man in charge here at Oasis. He has vowed to make your comfort his priority
+          
+        </div>
+
+        <div class="lodge"> 
+        
+          <img src="https://wrisenergy.org/wp-content/uploads/2019/06/Professional-headshot-square.jpg" class="meetImg" height=200px>
+          
+          <p class="meetTxt"> Ms. Parker is our lodging manager. If you have a question about your living space, she is the one to ask.
+          
+        </div>
+
+        <div class="surf1"> 
+        
+          <img src="https://angietolpin.com/wp-content/uploads/2015/01/Angie-headshot-square.jpg" class="meetImg" height=200px>
+          
+          <p class="meetTxt"> Ms. Heard is one of our surf instructors. She has been surfing for 5 years now and loves to teach anybody who wants to learn.
+          
+        </div>
+
+        <div class="surf2"> 
+        
+          <img src="https://boutiquephotographer.com/wp-content/uploads/2015/04/WORK_Headshot-Square.001_WEB.jpg" class="meetImg" height=200px>
+          
+          <p class="meetTxt"> Mr. Bowden is our other instructor. He has been surfing for 4 years and is excited to be joining our teamn this year.
+          
+        </div>
+        
+      </div>
+      </center>
+      
+    </div>
+    
+    <div class="package" id="package3">
+      
+      <center>
+      <h2> Packages </h2>
+      </center>
+      
+      <center>
+      <div class="packs">
+      
+        <div class="pack1">
+
+          <p> 3 Days (2 Nights) for $1500 </p>
+
+        </div>
+
+        <div class="pack2">
+
+          <p> 5 Days (4 Nights) for $2500 </p>
+
+        </div>
+
+        <div class="pack3">
+
+          <p> Add 3 Surf Lessons for $250 </p>
+
+        </div>
+      
+      </div>
+      </center>
+        
+    </div>
+    
+    <div class="info" id="info4">
+      
+      <center>
+      <h2> Important Information </h2>
+      </center>
+      
+      <center>
+      <div class="infoItems">
+      
+        <ul class="infoLi">
+          <li> Adress: 13500 Wolverine Way </li>
+          <li> Check in at your convience </li>
+          <li> Have a great stay! </li>
+        </ul>
+          <br>
+        <div class="mail">
+
+          <label for="email">Enter your email to join our mailing list:</label>
+
+          <input type="email" id="email" size="30">
+
+        </div>
+        
+      </div>
+      </center>
+      
+    </div>
+    
+  </body> 
+  
+</html>
+
+<html>
+  
+<style>
+  
+  body {
+  background-color: #c5e4ed;
+}
+
+nav {
+  list-style-type: none;
+  position: fixed;
+  width: 100%;
+  background-color: #dedcc3;
+  left: 0%;
+  top: 0%;
+  padding: 5px;
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Francois One", sans-serif;
+  color: #002e43;
+}
+
+.navli {
+  display: inline;
+  float: right;
+  padding: 18px ;
+}
+
+.navli:hover {
+  background-color: #7fa3ba;
+}
+
+h2 {
+  font-family: "Francois One", sans-serif;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  padding: 28px 10px 10px 10px;
+  
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  width: auto;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  padding-right: 24px;
+}
+
+.prev {
+  padding-left: 16px;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 20px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active, .demo:hover {
+  opacity: 1;
+}
+
+.meetImg {
+  padding-right: 10px;
+}
+
+.meetTxt {
+  text-align: left;
+}
+
+
+.lead, .lodge, .surf1, .surf2 {
+  display: flex;
+}
+
+.wrapper {
+  display: grid;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  width: 70%;
+  font-family: "Francois One", sans-serif;
+}
+
+.lead {
+  grid-area: 1/1/2/2;
+}
+
+.lodge {
+  grid-area: 2/1/3/2;
+}
+
+.surf1 {
+  grid-area: 1/2/2/3;
+}
+
+.surf2 {
+  grid-area: 2/2/3/3;
+}
+
+
+
+
+.packs {
+  display: flex;
+  width: 90vw;
+  justify-content: space-evenly;
+  font-family: "Francois One", sans-serif;
+}
+
+.pack1, .pack2, .pack3 {
+  height: 100px;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+  background-color: #dedcc3;
+}
+
+.pack1:hover, .pack2:hover, .pack3:hover {
+  background-color: #e6e3ca;
+}
+
+.infoItems {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Francois One", sans-serif;
+}
+
+label {
+    display: block;
+}
+
+input,
+label {
+    margin: 0.4rem 0;
+}
+
+.infoLi {
+  text-align: left;
+}
+  
+</style>
+  
+</html>
+
+<html>
+  
+<script>
+  
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+  
+</script>
+  
+</html>
