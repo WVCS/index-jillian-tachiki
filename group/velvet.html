@@ -1,1 +1,293 @@
+<html>
+  
+  <head>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Special+Elite" />
+  </head>
+  
+  <body>
+    
+    <nav> 
+      <li class=navli>
+        <a class=nava href="mail.html"> MAIL </a>
+      </li>
+      <li class=navli>
+        <a class=nava href="store.html"> MERCH </a>
+      </li>
+      <li class=navli>
+        <a class=nava href="tour.html"> TOUR </a>
+      </li>
+      <li class=navli>
+        <a class=nava href="https://open.spotify.com/" target="_blank"> MUSIC </a>
+      </li>
+      <li class=navli>
+        <a class=nava href="velvet.html"> HOME </a>
+      </li>
+    </nav>
+    
+    <div class="alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+      Dreams of Indigo dropping 5/2!
+</div>
+      
+    <div id="slides">
 
+      <img class="mySlides" src="indigo.png" style="width:100%">
+      <img class="mySlides" src="singer.png" style="width:100%">
+      <img class="mySlides" src="bassist.png" style="width:100%">
+      <img class="mySlides" src="guitarist.png" style="width:100%">
+      <img class="mySlides" src="drummer.png" style="width:100%">
+    </div>
+
+    <div id="wrapper">
+      
+      <div id="gridItm" class="music"> 
+        
+        <img src="music.png" id="gridImg" class="musicImg" height=325px>
+        <div id="gridTxt" class="musicTxt"> MUSIC </div>
+        <a class=nava href="https://open.spotify.com/" target="_blank"> <div class="overlay"> </div> </a>
+        
+      </div>
+      
+      <div id="gridItm" class="tour">
+        
+        <img src="tour.png" id="gridImg" class="tourImg" height=325px>
+        <div id="gridTxt" class="tourTxt"> TOUR </div>
+        <a href="tour.html"> <div class="overlay"> </div> </a>
+        
+      </div>
+      
+      <div id="gridItm" class="store">
+       
+        <img src="store.png" id="gridImg" class="storeImg" height=325px>
+        <div id="gridTxt" class="storeTxt"> STORE </div>
+        <a href="store.html"> <div class="overlay"> </div> </a>
+        
+      </div>
+      
+      <div id="gridItm" class="mail">
+        
+        <img src="mail.png" id="gridImg" class="mailImg" height=325px>
+        <div id="gridTxt" class="mailTxt"> MAILING LIST </div>
+        <a href="mail.html"> <div class="overlay"> </div> </a>
+        
+      </div>
+      
+    </div>
+    
+  </body>
+  
+</html>
+
+<html>
+  
+  <style>
+    
+    body {
+  background-color: #2e0616;
+}
+
+nav {
+  list-style-type: none;
+  position: fixed;
+  font-family: special elite;
+  width: 100%;
+  background-color: black;
+  left: 0%;
+  top: 0%;
+  padding: 5px;
+  z-index: 3;
+}
+
+.nava {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.navli {
+  display: inline;
+  float: right;
+  padding: 18px ;
+}
+
+.navli:hover {
+  background-color: #242424;
+}
+
+.alert{
+  position: fixed;
+  font-family: special elite;
+  top: 80px; 
+  left: 2%;
+  width: 94%;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  z-index: 2;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: grey;
+}
+
+.alertclosebutton {
+  float: right;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#slides {
+  width: 100%;
+}
+
+.mySlides {
+  display: none;
+}
+
+#wrapper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 49.5% 49.5%;
+  margin-right: auto;
+  margin-left: auto;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  padding-top: 20px;
+  justify-content: center;
+}
+
+.music, .tour, .store, .mail {
+  font-family: special elite;
+  font-size: 35px;
+  text-align: center;
+  height: 200px;
+  position: relative;
+}
+
+.music {
+  grid-area: 1/1/2/2;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tour {
+  grid-area: 1/2/2/3;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.store {
+  grid-area: 2/1/3/2;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.mail {
+  grid-area: 2/2/3/3;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#gridTxt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 1;
+}
+
+#gridItm:hover {
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #19090a;
+}
+
+#gridItm:hover .overlay {
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 600px) {
+  #wrapper {
+    display: block;
+  }
+  
+  #gridItm {
+    padding: 10px;
+    border-radius: 10px;
+    height: 150px;
+  }
+  
+  .alert {
+    display: none;
+  }
+  
+  nav {
+    list-style-type: none;
+    float: right;
+    margin-right: 0;
+    padding: 0;
+    width: 25%;
+    background-color: black;
+    height: fit-content;
+    position: fixed;
+    overflow: auto;
+    opacity: 0.75;
+  }
+  
+  #slides{
+    display: none;
+  }
+  
+}
+    
+  </style>
+  
+</html>
+
+<html>
+  
+  <script>
+    
+    var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+    
+  </script>
+  
+</html>
