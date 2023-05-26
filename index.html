@@ -1,56 +1,233 @@
 <html>
- <head>
+  
+  <head>
+   
   <title> Jillian's Website </title>
-  <link rel="stylesheet" href="style.css">
+   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+   
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
+  <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
+   
   <link rel="icon" href="Tab Image.png">
+   
  </head>
  
- <body>
-<nav>
- <li> <a href="group/velvet.html" target="_blank"> Velvet Hour </a> </li>
- <li> <a href="final/final.html" target="_blank"> Oasis </a> </li>
- <li> <a href="event/subzero.html" target="_blank"> SubZero </a> </li>
- <li> <a href="food/food_home.html" target="_blank"> Baymax's Burgers </a> </li>
- <li> <a href="convince/chocolate.html"> White Chocolate </a> </li>
- <li> <a href="noun/noun.html"> Glow Sticks </a> </li>
- <li> <a href="index.html"> Home </a> </li>
-  <link rel="stylesheet" href="style.css">
-    </nav>
-  <center>
-  <br>
-  <br>
-  <br>
-  <h1> Jillian's Website </h1>
-   <center>
- <img
-    src="personal artifact.png"
-      height=500px>
-    </body>
-</html>
+  <body>
+   
+    <div id="nav">
+    <div id='navtext'>
+      <ul>
+        <li> <a class="navTtl"> Websites </a>
+          <ul>
+            <li> <a href="noun/noun.html"> Glow Sticks </a> </li>
+            <li> <a href="convince/chocolate.html"> White Chocolate </a> </li>
+            <li> <a href="food/food_home.html" target="_blank"> Baymax's Burgers </a> </li>
+            <li> <a href="event/subzero.html" target="_blank"> SubZero </a> </li>
+            <li> <a href="final/final.html" target="_blank"> Oasis </a> </li>
+            <li> <a href="group/velvet.html" target="_blank"> Velvet Hour </a> </li>
+            <li> <a href=".html" target="_blank"> Crypt </a> </li>
+            <li> <a href=".html" target="_blank"> Motez </a> </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    </div>
+   
+    <center>
+    <br>
+    <p> Jillian's Website </p>
+    </center>
+    
+    <div id="wrapper">
+      
+      <div id="gridItm" class="glow">
+        <img src="noun/glow_bracelet.png" class="gridImg zoom">
+      </div>
+      
+      <div id="gridItm" class="choc">
+        <img src="convince/whitechocolate.png" class="gridImg zoom">
+      </div>
+      
+      <div id="gridItm" class="burger">
+        <img src="food/burger_logo.png" class="gridImg zoom">
+      </div>
+      
+      <div id="gridItm" class="zero">
+        <img src="event/subzero_logo.png" class="gridImg zoom">
+      </div>
+      
+      <div id="gridItm" class="logo">
+        <img src="personal artifact.png" class="gridImg">
+      </div>
+      
+      <div id="gridItm" class="oasis">
+        <img src="final/final_logo.png" class="gridImg zoom">
+      </div>
+      
+      <div id="gridItm" class="velvet">
+        <img src="group/VH_tab.png" class="gridImg zoom">
+      </div>
+      
+      <div id="gridItm" class="crypt">
+        <img src="amusement/crypt_logo.png" class="gridImg zoom">
+      </div>
+      
+      <div id="gridItm" class="motez">
+        <img src="brand/motez_logo.png" class="gridImg zoom">
+      </div>
+      
+    </div>
+   
+  </body>
   
-  <html>
-      <style>
-    nav {
-  list-style-type: none;
-  position: fixed;
-  width: 100%;
-  background-color: #7F627F;
-  left: 0%;
-  top: 0%;
-}
-li {
-  display: inline;
-  float: right;
-  padding: 20px;
-}
+</html>
 
-li:hover {
-  background-color: #EADDD7;
-}
+<html>
 
-a {
-  text-decoration: none;
+ <style>
+  
+p {
   color: #41044E;
+  font-family: 'Fleur De Leah', cursive;
+  font-size: 70px;
 }
-        </style>
+
+body {
+  background-color: #C9B7A6;
+}
+
+#nav {
+  width: 100%;
+  display: block;
+  z-index: 999;
+  top: 0px;
+  right: 0px;
+  position: fixed;
+  background-color: #7F627F;
+}
+
+#navtext {
+  float: left;
+  display: block;
+  margin-right: 5px;
+}
+
+#nav ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+#nav li {
+  float: left;
+  list-style: none;
+  line-height: 30px;
+  display: inline;
+}
+
+#nav li a, #nav li a:link {
+  color: black;
+  margin-right: 5px;
+  font-size: 20px;
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+#nav li li a, #nav li li a:link, #nav li li a:visited {
+  font-size: 20px;
+  color: black;
+  width: 170px;
+  margin: 0;
+  padding: 0px 10px;
+  line-height: 30px;
+  position: relative;
+  background-color: #572861;
+  color: #7F627F;
+}
+
+#nav li a:hover, #nav li li a:hover, #nav li li a:active {
+  color: #bba6bf;
+}
+ 
+#nav li ul {
+  z-index: 9999;
+  position: absolute;
+  right: -999em;
+  height: auto;
+  width: 150px;
+}
+
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #topwctopdropnav li li.sfhover ul, #topwctopdropnav li li li.sfhover ul {
+  right: auto;
+}
+
+#nav li:hover, #nav li.sfhover {
+  position: static;
+}
+
+.navTtl {
+  color: #572861;
+}
+
+#wrapper {
+  display: grid;
+  justify-content: center;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+}
+
+.glow {
+  grid-area: 1/1/2/2;
+}
+
+.choc {
+  grid-area: 1/2/2/3;
+}
+
+.burger {
+  grid-area: 1/3/2/4;
+}
+
+.zero {
+  grid-area: 2/1/3/2;
+}
+
+.logo {
+  grid-area: 2/2/3/3;
+}
+
+.oasis {
+  grid-area: 2/3/3/4;
+}
+
+.velvet {
+  grid-area: 3/1/4/2;
+}
+
+.crypt {
+  grid-area: 3/2/4/3;
+}
+
+.motez {
+  grid-area: 3/3/4/4;
+}
+
+.gridImg {
+  width: 400px;
+}
+
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+  
+  </style>
+ 
 </html>
