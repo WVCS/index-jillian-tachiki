@@ -1,1 +1,336 @@
+<html>
+  
+  <head>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Sancreek">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Special+Elite">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Henny+Penny">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Yuji+Syuku">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500;700&display=swap" rel="stylesheet">
+    <title> Crypt </title>
+    <link rel="icon" href="crypt_logo.png">
+  </head>
+  
+  <body>
+    
+    <div id="nav">
+    <div id='navtext'>
+      <ul>
+        <li> <a href='crypt.html'> Home </a> </li> 
+        <li> <a href='info.html'> Info </a> </li>
+        <li> <a> Rooms </a>
+          <ul>
+            <li> <a href='pirate.html'> Captain's Lair </a> </li>
+            <li> <a href='wonder.html'> Enchanted </a> </li>
+            <li> <a href='prison.html'> Breakout </a> </li>
+            <li> <a href='reality.html'> The Simulation </a> </li>
+            <li> <a href='space.html'> Mission to Mars </a> </li>
+            <li> <a href='circus.html'> The Greatest Escape </a> </li>
+          </ul>
+        </li>
+        <li> <a href='book.html'> Tickets </a> </li>
+      </ul>
+    </div>
+    </div>
+    
+    <br> <br> <br>
+    <div id="slides">
+      
+      <!--1900x400-->
+      <img class="mySlides" src="slide_red1.png" style="width:100%">
+      <img class="mySlides" src="slide_green2.png" style="width:100%">
+      <img class="mySlides" src="slide_blue3.png" style="width:100%">
+      <img class="mySlides" src="slide_brown4.png" style="width:100%">
+    </div>
+    
+    <br>
+    <center>
+    <div id="wrapper"> 
+      
+      <!--2000x2000-->
+      <div id="gridItm" class="pirate">
 
+        <img src="pirate_img.png" id="gridImg" class="pirateImg">
+        <div class="gridTxt"> Captain's Lair </div>
+        <a href="pirate.html" target="_blank">
+          <div class="overlay"> </div>
+        </a>
+
+      </div>
+      
+      <div id="gridItm" class="wonder">
+
+        <img src="wonder_img.png" id="gridImg" class="wonderImg">
+        <div class="gridTxt"> Enchanted </div>
+        <a href="wonder.html" target="_blank">
+          <div class="overlay"> </div>
+        </a>
+
+      </div>
+      
+      <div id="gridItm" class="prison">
+
+        <img src="prison_img.png" id="gridImg" class="prisonImg">
+        <div class="gridTxt"> Breakout </div>
+        <a href="prison.html" target="_blank">
+          <div class="overlay"> </div>
+        </a>
+
+      </div>
+      
+      <div id="gridItm" class="reality">
+
+        <img src="reality_img.png" id="gridImg" class="realityImg">
+        <div class="gridTxt"> The Simulation </div>
+        <a href="reality.html" target="_blank">
+          <div class="overlay"> </div>
+        </a>
+
+      </div>
+
+      <div id="gridItm" class="space">
+
+        <img src="space_img.png" id="gridImg" class="spaceImg">
+        <div class="gridTxt"> Mission to Mars </div>
+        <a href="space.html" target="_blank">
+          <div class="overlay"> </div>
+        </a>
+
+      </div>
+      
+      <div id="gridItm" class="circus">
+
+        <img src="circus_img.png" id="gridImg" class="circusImg">
+        <div class="gridTxt"> THE GREATEST ESCAPE </div>
+        <a href="circus.html" target="_blank">
+          <div class="overlay"> </div>
+        </a>
+
+      </div>
+      
+    </div>
+    </center>
+      
+  </body>
+  
+</html>
+
+<html>
+  
+  <style>
+    
+    body {
+  margin: 0;
+}
+
+#nav {
+  width: 100%;
+  display: block;
+  z-index: 999;
+  top: 0px;
+  right: 0px;
+  position: fixed;
+  background: black;
+  font-family: 'MuseoModerno', cursive;
+}
+
+#navtext {
+  float: left;
+  display: block;
+  margin-right: 5px;
+}
+
+#nav ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+#nav li {
+  float: left;
+  list-style: none;
+  line-height: 30px;
+  display: inline;
+}
+
+#nav li a, #nav li a:link {
+  color: white;
+  margin-right: 5px;
+  font-size: 20px;
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+}
+
+#nav li li a, #nav li li a:link, #nav li li a:visited {
+  font-size: 20px;
+  color: white;
+  width: 170px;
+  margin: 0;
+  padding: 0px 10px;
+  line-height: 30px;
+  position: relative;
+  background-color: black;
+}
+
+#nav li a:hover, #nav li li a:hover, #nav li li a:active {
+  color: #ccc;
+}
+ 
+#nav li ul {
+  z-index: 9999;
+  position: absolute;
+  right: -999em;
+  height: auto;
+  width: 150px;
+}
+
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #topwctopdropnav li li.sfhover ul, #topwctopdropnav li li li.sfhover ul {
+  right: auto;
+}
+
+#nav li:hover, #nav li.sfhover {
+  position: static;
+}
+
+#slides {
+  width: 100%;
+}
+
+.mySlides {
+  display: none;
+}
+
+#wrapper {
+  display: grid;
+  justify-content: center;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+}
+  
+#gridItm {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+
+#gridImg {
+  display: block;
+  height: 450px;
+  border-radius: 5px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+#gridItm:hover .overlay {
+  opacity: 0.5;
+}
+
+.gridTxt {
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.pirate {
+  grid-area: 1/1/2/2;
+  font-family: 'UnifrakturCook';
+  color: white;
+}
+
+.wonder {
+  grid-area: 1/2/2/3;
+  font-family: 'Henny Penny';
+  color: white;
+}
+
+.prison {
+  grid-area: 1/3/2/4;
+  font-family: 'Special Elite';
+  color: white;
+}
+
+.reality {
+  grid-area: 2/1/3/2;
+  font-family: 'Yuji Syuku';
+  color: black;
+  
+}
+
+.space {
+  grid-area: 2/2/3/3;
+  font-family: 'Audiowide';
+  color: white;
+}
+
+.circus {
+  grid-area: 2/3/3/4;
+  font-family: 'Sancreek';
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  #slides {
+    display: none;
+  }
+  
+  #wrapper {
+    display: block;
+    justify-content: center;
+  }
+  
+}
+  
+@media only screen and (max-width: 500px) {
+  #gridImg {
+    width: 300px;
+    height: 300px;
+  }
+    
+}
+    
+  </style>
+  
+</html>
+
+<html>
+  
+  <script>
+    
+    var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000);
+}
+    
+  </script>
+  
+</html>
