@@ -1,192 +1,367 @@
 <html>
- 
- <head>
-  <title> Jillian's Website </title>
-  <link rel="icon" href="Tab Image.png">
- </head>
- 
- <body>
-   <nav>
-     <li class=navli> <a href="../convince/chocolate.html"> White Chocolate </a> </li>
-     <li class=navli> <a href="noun.html"> Glow Sticks </li>
-     <li class=navli> <a href="../index.html"> Home </li>
-   </nav>
-   <br>
-   <br>
-  <center>
-   <h1> Glow Sticks </h1>
-  </center>
-  <center>
-    <div class="row_p">
-      <div class="column_p">
-        <img src="glow_bracelet.png"
-           alt="Bracelet"
-           height=300px>
-      </div>
-      <div class="column_p">
-        <img src="glow_stick.png"
-           alt="Stick"
-           height=300px>
-      </div>
-      <div class="column_p">
-        <img src="glow_wand.png"
-           alt="Wand"
-           height=300px>
-      </div>
+  
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+    <title> Glow Sticks </title>
+    <link rel="icon" href="glow_tab.png">
+  </head>
+  
+  <body>
+    
+    <nav>
+      
+      <li class="navli buyNav">
+        <a href="#buy"> Buy Now </a>
+      </li>
+      <li class="navli priceNav">
+        <a href="#price"> Pricing </a>
+      </li>
+      <li class="navli colorNav">
+        <a href="#color"> Colors </a>
+      </li>
+      
+    </nav>
+    
+    <br>
+    <center>
+    <p class="title"> Glow Sticks </p>
+    </center>
+    
+    <div id="color" class="color">
+      <center>
+      <p class="colorTtl"> Colors </p>
+      </center>
     </div>
-  </center>
-  <br>
-  <center>
-    <table>
+    
+    <div class="wrapper">
+      
+      <div id="storeItm" class="stick">
+
+        <img src="stick_pink.png" id="stickImg" class="storeImg">
+        
+        <br><br>
+        <center>
+        <div class="buttons">
+          <button type="button" class="pinkBtn" onclick="document.getElementById('stickImg').src = 'stick_pink.png' "></button>
+          <button type="button" class="purpleBtn" onclick="document.getElementById('stickImg').src = 'stick_purple.png' "></button>
+          <button type="button" class="blueBtn" onclick="document.getElementById('stickImg').src = 'stick_blue.png' "></button>
+          <button type="button" class="greenBtn" onclick="document.getElementById('stickImg').src = 'stick_green.png' "></button>
+        </div>
+        </center>
+
+      </div>
+
+      <div id="storeItm" class="brace">
+
+        <img src="brace_pink.png" id="braceImg" class="storeImg">
+        
+        <br><br>
+        <center>
+        <div class="buttons">
+          <button type="button" class="pinkBtn" onclick="document.getElementById('braceImg').src = 'brace_pink.png' "></button>
+          <button type="button" class="purpleBtn" onclick="document.getElementById('braceImg').src = 'brace_purple.png' "></button>
+          <button type="button" class="blueBtn" onclick="document.getElementById('braceImg').src = 'brace_blue.png' "></button>
+          <button type="button" class="greenBtn" onclick="document.getElementById('braceImg').src = 'brace_green.png' "></button>
+        </div>
+        </center>
+        
+      </div>
+      
+      <div id="storeItm" class="wand">
+
+        <img src="wand_pink.png" id="wandImg" class="storeImg">
+        
+        <br><br>
+        <center>
+        <div class="buttons">
+          <button type="button" class="pinkBtn" onclick="document.getElementById('wandImg').src = 'wand_pink.png' "></button>
+          <button type="button" class="purpleBtn" onclick="document.getElementById('wandImg').src = 'wand_purple.png' "></button>
+          <button type="button" class="blueBtn" onclick="document.getElementById('wandImg').src = 'wand_blue.png' "></button>
+          <button type="button" class="greenBtn" onclick="document.getElementById('wandImg').src = 'wand_green.png' "></button>
+        </div>
+        </center>
+        
+      </div>
+      
+    </div>
+    
+    <div id="price" class="price">
+      <center>
+      <p class="priceTtl"> Pricing </p>
+      </center>
+    </div>
+    
+    <br>
+    <center>
+    <table style="width:70%">
       <tr>
-        <th>Type</th>
-        <th>Quantity</th>
-        <th>Price</th>
+        <th style="width:50%"> Type </th>
+        <th> Quantity </th>
+        <th> Price </th>
       </tr>
       <tr>
-        <td>Bracelet</td>
-        <td>50</td>
-        <td>$5.99</td>
+        <td> Bracelet </td>
+        <td> 50 </td>
+        <td> $5.99 </td>
       </tr>
       <tr>
         <td> </td>
-        <td>100</td>
-        <td>$9.99</td>
+        <td> 100 </td>
+        <td> $9.99 </td>
       </tr>
       <tr>
-        <td>Stick</td>
-        <td>15</td>
-        <td>$8.50</td>
-      </tr>
-      <tr>
-        <td> </td>
-        <td>30</td>
-        <td>$14.99</td>
-      </tr>
-      <tr>
-        <td>Wand</td>
-        <td>5</td>
-        <td>$10.50</td>
+        <td> Stick </td>
+        <td> 15 </td>
+        <td> $8.50 </td>
       </tr>
       <tr>
         <td> </td>
-        <td>10</td>
-        <td>$21.99</td>
+        <td> 30 </td>
+        <td> $14.99 </td>
       </tr>
-    </table>
-  <br>
-  <p>Colors</p>
-   <div class="container">
-    <ul class="color">
-      <li>Blue</li>
-      <li>Pink</li>
-      <li>Green</li>
-      <li>Purple</li>
-    </ul>
-   </div>
+      <tr>
+        <td> Wand </td>
+        <td> 5 </td>
+        <td> $10.50 </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> 10 </td>
+        <td> $21.99 </td>
+      </tr>
+  </table>
+    </center>
+    
+    <div id="buy" class="buy">
+      <center>
+      <p class="buyTtl"> Buy Now </p>
+      </center>
+    </div>
+    
+    <center>
+    <form>
+      
+      <label for="formType"> Type: </label>
+      <select id="formType" name="formType">
+        <option value="stick"> Stick </option>
+        <option value="brace"> Bracelet </option>
+        <option value="wand"> Wand </option>
+      </select>
+      
+      <br> <br>
+      <label for="formColor"> Color: </label>
+      <select id="formColor" name="formColor">
+        <option value="pink"> Pink </option>
+        <option value="purple"> Purple </option>
+        <option value="blue"> Blue </option>
+        <option value="green"> Green </option>
+      </select>
+      
+      <br> <br>
+      <legend> Size: </legend>
+
+      <div>
+        <input type="radio" id="huey" name="drone" value="huey"
+             checked>
+        <label for="huey"> Small </label>
+      </div>
+
+      <div>
+        <input type="radio" id="dewey" name="drone" value="dewey">
+        <label for="dewey"> Bulk </label>
+      </div>
+      
+      <br>
+      <input id="submit" type="submit" value="Buy" class="submitBtn" onclick="submitForm()" >
+      
+    </form>
+    </center>  
+      
   </body>
+  
 </html>
-  
-  
+
 <html>
+ 
   <style>
-body {
-  background-color:#232426;
+ 
+    body {
+  background-color: #242424; 
 }
-    
-h1 {
-  color:#81f7ec;
-  font: bold 50px Courier New, serif;
-  text-shadow: 0 0 20px #2FF3E0;
-}
-    
+
 nav {
   list-style-type: none;
+  font-family: 'Damion', cursive;
+  font-size: 20px;
   position: fixed;
   width: 100%;
-  background-color: #424242;
+  background-color: #383838;
   left: 0%;
   top: 0%;
+  padding: 2px;
+  box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
-    
+
 a {
   text-decoration: none;
-  color:#C1FF9B;
-  font: bold 17px Courier New, serif;
-  text-shadow: 0 0 15px #C1FF9B
+  color: #72fcf3;
+  text-shadow: 0 0 20px #72fcf3;
 }
-    
+
 .navli {
   display: inline;
   float: right;
-  padding: 20px ;
+  padding: 18px ;
 }
 
 .navli:hover {
-  background-color: #5c5c5c;
+  background-color: #454545;
 }
-    
-* {
-  box-sizing: border-box;
+
+.title {
+  font-size: 65px;
+  color: #72fcf3;
+  font-family: 'Damion', cursive;
+  text-shadow: 0 0 20px #72fcf3;
+}
+
+.color {
+  background-color: #4f3346;
+}
+
+.colorTtl {
+  font-size: 50px;
+  color: #fc72ce;
+  font-family: 'Damion', cursive;
+  text-shadow: 0 0 20px #fc72ce;
+}
+
+.price {
+  background-color: #374a31;
+}
+
+.priceTtl {
+  font-size: 50px;
+  color: #92fc72;
+  font-family: 'Damion', cursive;
+  text-shadow: 0 0 20px #92fc72;
+}
+
+.buy {
+  background-color: #43374a;
+}
+
+.buyTtl {
+  font-size: 50px;
+  color: #c772fc;
+  font-family: 'Damion', cursive;
+  text-shadow: 0 0 20px #c772fc;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.storeImg {
+  height: 350px;
+  transition: transform .5s;
+}
+ 
+.buttons {
+  background-color: #4d4d4d;
+  width: fit-content;
+  padding: 5px;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.blueBtn, .pinkBtn, .greenBtn, .purpleBtn {
+  transition: transform .2s;
+}
+
+.blueBtn:hover, .pinkBtn:hover, .greenBtn:hover, .purpleBtn:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.blueBtn {
+  background-color: #72fcf3;
+}
+
+.pinkBtn {
+  background-color: #fc72ce;
+}
+
+.greenBtn {
+  background-color: #92fc72;
+}
+
+.purpleBtn {
+  background-color: #c772fc;
 }
 
 table, th, td {
-  color:#F8D210;
-  width:50%;
-  border-collapse:collapse;
-  border-style:solid;
-  border-color:gold;
+  color: #92fc72;
+  border-collapse: collapse;
+  border-style: solid;
+  border-color: #92fc72;
 }
 
 th, td {
   text-align: left;
-  text-shadow: 0 0 15px #F8D210;
-  font: bold 15px Courier New, serif;
-  text-align:center;
-}
-    
-tr:nth-child(even) {
-  background-color: #424242;
-}
-    
-tr:hover {
-  background-color:#4f4826;
-}
-    
-ul.color {
-  color:#FA26A0;
-  font: bold 25px Courier New, serif;
-  text-shadow: 0 0 15px #FA26A0;
-  display: inline-block;
-  text-align: left;
-}
-    
-div.container {
+  text-shadow: 0 0 15px #92fc72;
+  font: bold 20px Courier New, serif;
   text-align: center;
 }
-    
-p {
-  color:#FA26A0;
-  font: bold 25px Courier New, serif;
-  text-shadow: 0 0 15px #FA26A0;
+
+tr:nth-child(even) {
+  background-color: #383838;
 }
-    
-img:hover {
-  box-shadow:0 0 35px #AB87FF;
+
+tr:hover {
+  background-color: #374a31;
 }
-    
-.column_p {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
+
+form, select, input {
+  font: bold 20px Courier New, serif;
+  color: #c772fc;
+  text-shadow: 0 0 20px #c772fc;
 }
-    
-.row_p::after {
-  content: "";
-  clear: both;
-  display: table;
+
+select {
+  background-color: #303030;
 }
-    
+
+#submit {
+  background-color: #303030;
+}
+ 
   </style>
+ 
 </html>
 
+<html>
+ 
+  <script>
+   
+    function submitForm() {
+  alert("Glow sticks purchased!");
+}
+    
+  </script>
+ 
+</html>
