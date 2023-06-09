@@ -1,0 +1,218 @@
+<html>
+  
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Henny+Penny">
+    <title> Crypt </title>
+    <link rel="icon" href="crypt_logo.png">
+  </head>
+  
+  <body>
+    
+    <div id="nav">
+    <div id='navtext'>
+      <ul>
+        <li> <a href='crypt.html'> Home </a> </li> 
+        <li> <a href='info.html'> Info </a> </li>
+        <li> <a> Rooms </a>
+          <ul>
+            <li> <a href='pirate.html'> Captain's Lair </a> </li>
+            <li> <a href='wonder.html'> Enchanted </a> </li>
+            <li> <a href='prison.html'> Breakout </a> </li>
+            <li> <a href='reality.html'> The Simulation </a> </li>
+            <li> <a href='space.html'> Mission to Mars </a> </li>
+            <li> <a href='circus.html'> The Greatest Escape </a> </li>
+          </ul>
+        </li>
+        <li> <a href='book.html'> Book Now </a> </li>
+      </ul>
+    </div>
+    </div>
+    
+    <br> <br> <br>
+    <div id="banner">
+      <!--1900x400-->
+      <img src="https://www.travel-stop.co.uk/wp-content/uploads/2019/08/Italy_banner-1900x400.jpg" style="width:100%">
+      <div class="bannerTxt"> Enchanted </div>
+    </div>
+    
+    <br>
+    <h1> Enchanted </h1>
+    <div id="wrapper">
+      
+      <div id="gridItm" class="stats">
+        <img class="image" src="https://wallpapercave.com/wp/wp10469173.png">
+      </div>
+      
+      <div id="gridItm" class="text">
+        <p> You and your friends woke up in a cottage in the middle of an enchanted forest. The enchantress that has captured you warns that she has put a spell on you. You have one hour to escape or you'll be stuck in this world forever! Navigate through the cottage and solve puzzles together in order to gather the three artifacts you need in order to get out and return home. </p>
+        <center>
+        <button class="ticketBtn" onclick=" window.open('book.html')"> Book Now </button>
+        </center>
+      </div>
+      
+    </div>
+    <br>
+    
+  </body>
+  
+</html>
+
+<html>
+  
+  <style>
+    
+    body {
+  margin: 0;
+  
+}
+
+#nav {
+  width: 100%;
+  display: block;
+  z-index: 999;
+  top: 0px;
+  right: 0px;
+  position: fixed;
+  background: black;
+  font-family: 'MuseoModerno', cursive;
+}
+
+#navtext {
+  float: left;
+  display: block;
+  margin-right: 5px;
+}
+
+#nav ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+#nav li {
+  float: left;
+  list-style: none;
+  line-height: 30px;
+  display: inline;
+}
+
+#nav li a, #nav li a:link {
+  color: white;
+  margin-right: 5px;
+  font-size: 20px;
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+}
+
+#nav li li a, #nav li li a:link, #nav li li a:visited {
+  font-size: 20px;
+  color: white;
+  width: 170px;
+  margin: 0;
+  padding: 0px 10px;
+  line-height: 30px;
+  position: relative;
+  background-color: black;
+}
+
+#nav li a:hover, #nav li li a:hover, #nav li li a:active {
+  color: #ccc;
+}
+ 
+#nav li ul {
+  z-index: 9999;
+  position: absolute;
+  right: -999em;
+  height: auto;
+  width: 150px;
+}
+
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #topwctopdropnav li li.sfhover ul, #topwctopdropnav li li li.sfhover ul {
+  right: auto;
+}
+
+#nav li:hover, #nav li.sfhover {
+  position: static;
+}
+
+#banner {
+  position: relative;
+}
+
+.bannerTxt {
+  font-size: 70px;
+  font-family: 'Henny Penny';
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-family: 'Henny Penny';
+  font-size: 60px;
+  display: none;
+}
+  
+#wrapper {
+  display: grid;
+  justify-content: center;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+}
+
+#gridItm {
+  position: relative;
+  width: 450px;
+}
+
+.stats {
+  grid-area: 1/1/2/2;
+}
+
+.image {
+  display: block;
+  height: 450px;
+}
+
+.text {
+  grid-area: 1/2/2/3;
+  font-family: 'MuseoModerno', cursive;
+  font-size: 20px;
+}
+
+.ticketBtn {
+  font-family: 'MuseoModerno', cursive;
+  font-size: 20px;
+  width: 150px;
+  background-color: black;
+  border: none;
+  color: white;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 925px) {
+  #wrapper {
+    display: block;
+    justify-content: center;
+  }
+    
+}
+
+@media only screen and (max-width: 750px) {
+  #banner {
+    display: none;
+  }
+  
+  h1 {
+    display: block;
+  }
+    
+}
+    
+  </style>
+  
+</html>
